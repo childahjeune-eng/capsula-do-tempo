@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>capsula do tempo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topo">
+        <h1>capsula do tempo da turma</h1>
+        <p>escreva hoje. seja surpreendido no futuro</p>
+    </header>
+
+    <main class="conteudo">
+        <section class="cartao">
+            <h2>enterrar uma nova cápsula</h2>
+            <form id="form-capsula">
+                <label for="autor">seu nome</label>
+                <input type="text" id="autor" maxlength="60" required>
+
+                <label for="titulo">titulo</label>
+                <input type="text" id="titulo" maxlength="100" required>
+
+                <label for="mensagem">mensagem para o futuro</label>
+                <textarea id="mensagem" rows="5" maxlength="1000" required></textarea>
+
+                <label for="abre-em">Abri em</label>
+                <input type="datetime-local" id="abre-em" required>
+
+                <button type="submit">trancar cápsula</button>
+                <p id="aviso" class="aviso"></p>
+            </form>
+        </section>
+
+        <section>
+            <h2>capsulas da turma</h2>
+            <div id="lista">
+                <article class="capsula trancada">
+                    <h3>para mim em 2030</h3>
+                    <small>por childah</small>
+                    <p class="contagem">Abre em 1234 dias</p>
+                </article>
+                <article class="capsula aberta">
+                    <h3>bem-vindos leitores</h3>
+                    <small>por aluno</small>
+                    <p>Esta cápsula foi aberta. Esta é a mensagem dela.</p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
